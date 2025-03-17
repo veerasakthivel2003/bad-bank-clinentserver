@@ -10,7 +10,7 @@ export default function Withdraw() {
   const [withdrawAmount, setWithdrawAmount] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [isValid, setIsValid] = useState(false);
-  const api = "http://localhost:1234";
+  const api = "https://bad-bank-serverside.onrender.com/";
 
   useEffect(() => {
     validateForm();
