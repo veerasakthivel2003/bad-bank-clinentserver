@@ -1,0 +1,165 @@
+/* alldata.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f7fa;
+  font-family: 'Arial', sans-serif;
+
+  height: 100vh;
+}
+
+.alldata-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 80%;
+  max-width: 1000px;
+  overflow-x: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #0066cc;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f4f7fa;
+  color: #333;
+  font-weight: bold;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table tbody tr td button {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #b0d6f7;
+  cursor: not-allowed;
+}
+
+.edit-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.edit-form input:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+.edit-form input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.edit-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0066cc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button:hover {
+  background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+  .alldata-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .table th, .table td {
+    padding: 10px 12px;
+  }
+
+  .edit-form input {
+    padding: 10px;
+  }
+
+  .edit-form button {
+    padding: 10px;
+  }
+}
