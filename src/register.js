@@ -6,7 +6,7 @@ export default function Register() {
   let [Name, setName] = useState("");
   let [Email, setEmail] = useState("");
   let [pass, setPass] = useState("");
-  const api ="http://localhost:1234";
+  const api ="https://bad-bank-serverside.onrender.com/";
   function handleSubmit(e) {
     e.preventDefault();
     let item = [{ name: Name, email: Email, password: pass, amount: 1000 }];
