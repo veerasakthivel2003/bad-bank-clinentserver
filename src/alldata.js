@@ -8,7 +8,7 @@ export default function Alldata() {
   let [editId, setEditId] = useState(null);
   let [formData, setFormData] = useState({ name: "", email: "", password: "", amount: "" });
 
-  const api = "http://localhost:1234";
+  const api = "https://bad-bank-serverside.onrender.com/";
 
 
   useEffect(() => {
