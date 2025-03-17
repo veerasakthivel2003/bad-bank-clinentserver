@@ -12,7 +12,7 @@ export default function Deposit() {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [isValid, setIsValid] = useState(false);
-  const api = "http://localhost:1234";
+  const api = "https://bad-bank-serverside.onrender.com/";
   // Validate form inputs
   const validateForm = () => {
     if (!email.trim() || !password.trim() || isNaN(deposit) || deposit <= 0) {
